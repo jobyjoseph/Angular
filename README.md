@@ -21,6 +21,7 @@ ng serve
 
 ## Binding with an input
 We need to import FormsModule to use binding with forms.
+
 __app.module.ts__
 ```javascript
 ...
@@ -37,3 +38,22 @@ __app.component.html__
 <input type="text" [(ngModel)]="name"/>
 <p>{{name}}</p>
 ```
+
+## Adding extra styles to project
+First we need to install the css framework like Bootstrap. Then add reference in _angular.json_ config file.
+
+__angular.json__
+```javascript
+...
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+],
+...
+```
+
+## Angular Compiler Flow
+When an App starts, Angular CLI starts with `main.ts` file. There we are saying to `bootstrapModule` with `AppModule`. `AppModule` is a reference to `app.module.ts` file. Inside `app.module.ts` file, we are pointing to `AppComponent`. This is how the app displays the html from app.component.html.
+
+## Creating a New Component
+It is good to have the component folder name match component name.
