@@ -18,6 +18,10 @@ Navigate to the Angular project directory.
 ```
 ng serve
 ```
+Default port is 4200. To change the port we can use `--port` flag.
+```
+ng server --port 4201
+```
 
 ## Binding with an input
 We need to import FormsModule to use binding with forms.
