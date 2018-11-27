@@ -48,3 +48,31 @@ We can generate a boilerplate to create new component from command line. Go to t
 ng generate component <component-name>
 ```
 It will create the component inside `app` folder.
+
+## Selectors in Custom Components
+When we write
+```javascript
+selector: 'app-servers'
+```
+we use it as an element
+```html
+<app-servers></app-servers>
+```
+
+When we write
+```javascript
+selector: '[app-servers]'
+```
+we use it as an attribute
+```html
+<div app-servers></div>
+```
+
+When we write
+```javascript
+selector: '.app-servers'
+```
+we use it with class
+```html
+<div class="app-servers"></div>
+```
