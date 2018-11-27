@@ -41,3 +41,10 @@ Now we can use our new component in any components inside `AppModule` like:
 <app-server></app-server>
 ...
 ```
+
+## Creating Custom Components Using CLI
+We can generate a boilerplate to create new component from command line. Go to the project folder in terminal.
+```
+ng generate component <component-name>
+```
+It will create the component inside `app` folder.
