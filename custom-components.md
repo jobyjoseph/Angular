@@ -50,6 +50,7 @@ ng generate component <component-name>
 It will create the component inside `app` folder.
 
 ## Selectors in Custom Components
+__As element__
 When we write
 ```javascript
 selector: 'app-servers'
@@ -59,6 +60,7 @@ we use it as an element
 <app-servers></app-servers>
 ```
 
+__As attribute__
 When we write
 ```javascript
 selector: '[app-servers]'
@@ -68,6 +70,7 @@ we use it as an attribute
 <div app-servers></div>
 ```
 
+__As class__
 When we write
 ```javascript
 selector: '.app-servers'
